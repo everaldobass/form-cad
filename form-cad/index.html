@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/form.css">
+    <title>Cadastro Pessoal</title>
+</head>
+<body>
+
+    <section id="container">
+        <form action="#">
+
+            <fieldset id="field">
+                <legend>Dados Pessoais</legend>
+                <div class="row">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome" autocomplete="off" required>
+                </div>
+
+                <div class="row">
+                    <label for="nome">Sobrenome</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" autocomplete="off" required>
+                </div>
+
+                <div class="row">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" autocomplete="off" required>
+                </div>
+
+
+                <div class="row">
+                    <label for="">Estado Civil</label>
+
+                    <input type="radio" value="Casado" id="casado" name="estadocivil" />
+                    <label for="casado">Casado</label>
+
+                    <input type="radio" value="Solteiro" id="solteiro" name="estadocivil" />
+                    <label for="solteiro">Solteiro</label>
+                </div>
+
+                <div class="row">
+                    <label for="filhos">Filhos</label>
+                    <input type="number" id="filhos" name="filhos" max="10" min="0" />
+                </div>
+                <div class="row"></div>
+
+            </fieldset>
+
+
+            <fieldset id="field">
+                <legend>Dados profissionais</legend>
+
+                <div class="row">
+                    <label for="" class="text"> Curso que você deseja aprender: </label>
+                </div>
+
+                <div class="row">
+                    <input type="checkbox" id="html" name="html">
+                    <label for="html"> HTML5 </label>
+
+                    <input type="checkbox" id="css" name="css">
+                    <label for="css"> CSS3 </label>
+
+                    <input type="checkbox" id="javascript" name="javascript">
+                    <label for="javascript"> JavaScript </label>
+                </div>
+
+                <div class="row">
+                    <label for="sobre" class="text">Fale sobre Você: </label>
+                </div>
+
+                <div class="row">
+                    <textarea name="sobre" id="sobre" cols="30" rows="10" placeholder="Descreva suas habilidades" autocomplete="off"></textarea>
+                </div>
+
+                <div class="row">
+                    <input type="file" accept=".pdf,.docx, .csv, .xlsms">
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>

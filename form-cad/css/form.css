@@ -1,0 +1,183 @@
+/*=======Resetar======*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   
+    background: #e7e7e7; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    color: #040004;
+    line-height: 1.5;
+
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 720px;
+    padding: 10px;
+    margin: 10px auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #c2cbce;
+}
+
+.row{
+    padding: 10px;
+}
+
+
+
+.buttons{
+    text-align: center;
+}
+
+
+#field{   
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    border-color: #c2cbce;
+    box-shadow: 2px 2px 2px #c2cbce;
+    border-radius: 10px;
+}
+
+
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+label:not([for="casado"], [for="solteiro"], [for="html"], [for="css"], [for="javascript"]){
+
+    display: inline-block;
+    width: 120px;
+
+}
+
+
+input{
+    padding: 2px;
+    outline: none;
+}
+
+input[id="nome"],
+input[id="sobrenome"],
+input[id="email"]{
+    width: 480px;
+    height: 30px;
+}
+
+input[id="dtnasc"]{
+    width: 180px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"]{
+    border: none;
+    border-bottom:2px solid #c2cbce;
+    transition: 0.3s all ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus{
+
+    color: #543799;
+    font-weight: 600;
+    letter-spacing:1px;
+    border-color: #543799;
+
+}
+
+textarea{
+    padding: 10px;
+    resize: none;
+    outline: none;
+    width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webekit-apperance: none;
+    margin: 0;
+}
+
+input[type="submit"],
+input[type="reset"]{
+    width: 140px;
+    height: 45px;
+    padding: 5px 10px;
+    background-color: #543799;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+
+
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    transform: scale(1.2);
+}
+
+
+label[for="html"],
+label[for="css"],
+label[for="javascript"]{
+    border: 1px solid #040004;
+    border-radius: 5px;
+    padding: 8px 10px;
+    font-weight: 100;
+    margin: 1px 0 1px 0;
+    display: inline-block;
+    transition: 0.3s all ease-in-out;
+}
+
+
+input[type="checkbox"]:checked+label{
+    background-color: #543799;
+    border-color: #543799;
+    color: #fff;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+label[for="html"]:hover,
+label[for="css"]:hover,
+label[for="javascript"],
+input[type="submit"],
+input[type="reset"]{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
